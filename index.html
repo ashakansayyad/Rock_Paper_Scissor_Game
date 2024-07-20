@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header  ====================================================================================-->
+    <div class="diOutput">
+        <h2 id="heading">
+            ROCK <br />
+            PAPER <br />
+            SCISSORS
+        </h2>
+
+        <div class="twoBox">
+            <div class="comScore">
+                <p>
+                    COMPUTER <br />
+                    SCORE
+                </p>
+                <p id="Cpoints">0</p>
+            </div>
+            <div class="userScore">
+                <p>
+                    YOUR <br />
+                    SCORE
+                </p>
+                <p id="Upoints">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Play Game =================================================================================================-->
+    <div class="main_Container">
+        <div class="gameContainer">
+            <div class="rk_l1_sc_container">
+                <div class="conRock user"  data-val="rock">
+                    <img src="./image/rock.png" alt="rock" class="rock" />
+                </div>
+                <div class="conL1">
+                    <img src="./image/Line 1.png" alt="line1" class="line1" />
+                </div>
+                <div class="conScissor user"  data-val="scissor">
+                    <img src="./image/scissor.png" alt="scissor" class="scissor" />
+                </div>
+            </div>
+
+            <div class="two_line_con">
+                <div class="conL3">
+                    <img src="./image/Line 3.png" alt="line3" class="line3" />
+                </div>
+                <div class="conL2">
+                    <img src="./image/Line 2.png" alt="line2" class="line2" />
+                </div>
+            </div>
+            <div class="conPaper user"  data-val="paper">
+                <img src="./image/paper.png" alt="paper" class="paper" />
+            </div>
+
+          
+        </div>
+    </div>
+            <!-- PC PICKED========================================================== -->
+        <div class="forComputer">
+            <div class="conRock comp " data-val="rock">
+                <img src="./image/rock.png" alt="rock" class="rock" />
+            </div>
+          
+            <div class="conScissor comp"  data-val="scissor">
+                <img src="./image/scissor.png" alt="scissor" class="scissor" />
+            </div>
+ 
+    
+        <div class="Paper comp"  data-val="paper">
+            <img src="./image/paper.png" alt="paper" class="paper" />
+        </div>
+
+
+        </div>
+    <!------ Result Portion====================================================================================-->
+    <div class="textContainer">
+        <p class="you">YOU PICKED</p>
+        <p class="pc">PC PICKED</p>
+    </div>
+    <div class="ResultSection">
+        <div class="circleContainer">
+            <div class="conRock user">
+                <img src="./image/rock.png" alt="rock" class="rock" />
+            </div>
+            <div class="circle">
+                <div id="circleTwo">
+                    <div id="circleOne">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="resultText">
+
+            <h2 class="winLoseText">
+                YOU WIN
+            </h2>
+            <p id="pctext">
+                AGAINST PC
+            </p>
+            <button id="playAgain">PLAY AGAIN</button>
+
+        </div>
+
+        <div class="circleContainer1">
+            <div class="conScissor user">
+                <img src="./image/scissor.png" alt="scissor" class="scissor" />
+            </div>
+            <div class="circle1">
+                <div id="circleTwo">
+                    <div id="circleOne">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </div>
+
+
+    <!-- Winner Section ======================================================================================== -->
+    <div class="winnerSection">
+
+        <div class="trophyDiv">
+            <img id="stars" src="./image/stars.png" alt="stars">
+            <img id="trophy" src="./image/trophy.png" alt="trophy">
+
+        </div>
+
+        <div class="winnerT">
+
+
+            <h2 id="hText">
+
+                HURRAY!!
+            </h2>
+
+            <h3 id="winText">
+                YOU WON THE GAME
+            </h3>
+
+
+        </div>
+        <div class="won_btn">
+            <button id="playAgain1">PLAY AGAIN</button>
+        </div>
+
+
+    </div>
+
+
+    <!-- Rules Box =========================================================================================-->
+    <div class="parent_container">
+        <div class="rules_container">
+            <div class="cancle_btn">
+                <img id="C_image" src="./image/X.png" alt="cancle" />
+            </div>
+            <div class="list_container">
+                <h2 id="heading_2">Game Rules</h2>
+                <div class="list">
+                    <div id="box"></div>
+                    Rock beats scissors, scissors beat paper, and paper beats rock.
+                </div>
+                <div class="list">
+                    <div id="box"></div>
+                    Agree ahead of time whether you’ll count off “rock, paper, scissors,
+                    shoot” or just “rock, paper, scissors.”
+                </div>
+                <div class="list">
+                    <div id="box"></div>
+                    Use rock, paper, scissors to settle minor decisions or simply play
+                    to pass the time
+                </div>
+                <div class="list">
+                    <div id="box"></div>
+                    If both players lay down the same hand, each player lays down
+                    another hand
+                </div>
+            </div>
+        </div>
+        <div class="btn_container">
+            <button class="next_btn">NEXT</button>
+            <button class="rule_btn">RULES</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
