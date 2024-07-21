@@ -113,7 +113,7 @@ let playGame = (comChoiseElem, userChoiseElem) => {
     winText.innerText = "TIE UP";
     playAgainBtn.style.display = "block";
   }else if(userChoise === "rock" && comChoise ==="paper" || 
-    userChoise === "scissor" && comChoise === "paper" ||
+    userChoise === "paper" && comChoise === "scissor" ||
      userChoise === "scissor" && comChoise === "rock"){
     setTimeout(()=>{
       winText.style.display = "block";
